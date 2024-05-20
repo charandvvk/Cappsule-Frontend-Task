@@ -1,0 +1,54 @@
+.options {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 12px;
+    margin-left: 12px;
+}
+
+.option {
+    background: none;
+    font-family: inherit;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 13px;
+    line-height: 20.28px;
+    cursor: pointer;
+}
+
+.option--selected {
+    color: #112d31;
+    font-weight: 600;
+    border-width: 1.5px;
+    border-color: #112d31;
+}
+
+.option--not-selected {
+    color: #555555;
+    border-width: 1px;
+    border-color: #ababab;
+}
+
+.option--available {
+    border-style: solid;
+}
+
+.option--not-available {
+    border-style: dashed;
+}
+
+.option--selected.option--available {
+    box-shadow: 0px 0px 11.54px 0px #00c5a166;
+}
+
+.toggler {
+    background: none;
+    padding: 0;
+    align-self: end;
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21.84px;
+    color: #204772;
+    cursor: pointer;
+    margin-left: 17px;
+}
